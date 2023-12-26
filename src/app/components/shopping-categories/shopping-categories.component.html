@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="content-wrapper">
+        <h2 class="content-title">Who are you shopping for?</h2>
+        <div class="content scroll">
+            @for (item of categories; track $index) {
+            <div style="display: block;" class="pointer">
+                <div class="image-wrapper">
+                    <img class="image" src={{item.url}}>
+                </div>
+                <p class="image-title">
+                    {{item.title}}
+                </p>
+            </div>
+            }
+        </div>
+    </div>
+</div>

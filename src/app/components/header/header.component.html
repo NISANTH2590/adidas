@@ -1,0 +1,66 @@
+@if(displayHeader){
+<div (scroll)="scrollHandler($event)">
+    <div class="header-promo">
+        {{promoContents[currentIndex]}}
+    </div>
+    <div class="header-container scroll-watcher">
+        <div class="header-top">
+            <a class="header-top-content">help</a>
+            <a class="header-top-content">orders and returns</a>
+            <a class="header-top-content">sign up</a>
+            <a class="header-top-content">log in</a>
+        </div>
+
+        <div class="header-bottom">
+
+            <div class="display-none">
+                <div class="user-icon ">
+                    <img class="search" src="../../../assets/svgs/hamBurger.svg">
+                </div>
+                <div class="user-icon ">
+                    <img class="search" src="../../../assets/svgs/heart.svg">
+                </div>
+            </div>
+
+            <!-- <div class="logo"> -->
+            <img class="logo-wrapper" src="../../../assets/svgs/adidasLogo.svg">
+            <!-- </div> -->
+
+            <div class="header-bottom-contents">
+                <a class="category font-700">MEN</a>
+                <a class="category font-700">WOMEN</a>
+                <a class="category font-700">KIDS</a>
+                <a class="category font-500">SPORTS</a>
+                <a class="category font-500">BRANDS</a>
+                <a class="category font-500">LIFESTYLE</a>
+                <a class="category font-700 outline">OUTLET</a>
+            </div>
+            <div class="auxiliary-menu">
+
+                <div class="input-wrapper">
+                    <input class="input" placeholder="Search">
+                    <div class="search-wrapper">
+                        <img class="search" src="../../../assets/svgs/search.svg">
+                    </div>
+                </div>
+
+                <div class="user-icon">
+                    <img class="search" src="../../../assets/svgs/user.svg">
+                </div>
+
+                <div class="user-icon display-none">
+                    <img class="search" src="../../../assets/svgs/search.svg">
+                </div>
+
+                <div class="user-icon display-block">
+                    <img class="search" src="../../../assets/svgs/heart.svg">
+                </div>
+
+                <div class="user-icon">
+                    <img class="search" src="../../../assets/svgs/shoppingBag.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}

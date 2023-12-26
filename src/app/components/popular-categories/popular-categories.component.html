@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <section class="section-wrapper">
+        <h2 class="title">Popular right now</h2>
+        <div class="contents">
+            @for (item of popularContents; track $index) {
+            <div class="content-container">
+                <span class="content">{{item}}</span>
+            </div>
+            }
+        </div>
+    </section>
+</div>

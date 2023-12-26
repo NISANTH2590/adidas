@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="content-header">
+        <h2 class="content-title">Still interested?</h2>
+    </div>
+    <div class="content-wrapper">
+        <div class="contents scroll">
+            @for (item of interestedProducts; track $index) {
+            <div class="content">
+                <div class="image-wrapper pointer">
+                    <img class="image" src={{item.url}}>
+                    <div class="price-wrapper">
+                        <p class="price">{{item.price}}</p>
+                    </div>
+                </div>
+                <div class="product-content-wrapper">
+                    <div class="title-wrapper pointer">
+                        <p class="title">{{item.title}}</p>
+                    </div>
+                    <div class="category-wrapper pointer">
+                        <p class="category">{{item.category}}</p>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

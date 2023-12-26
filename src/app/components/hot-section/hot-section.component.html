@@ -1,0 +1,30 @@
+<div class="hot-section-wrapper">
+    <div class="hot-section-header">
+        <h1 class="hot-section-title">WHAT'S HOT?</h1>
+    </div>
+    <div class="hot-section-scroll-wrapper scroll">
+        <div class="hot-section-scroll">
+            @for (item of hotSectionContents; track $index) {
+            <div class="hot-section-image-wrapper pointer">
+                <div>
+                    <div class="image-wrapper">
+                        <img class="hot-section-image" src={{item.url}} alt="" width="1050" height="1400" loading="lazy"
+                            fetchpriority="auto">
+                    </div>
+                    <div class="hot-section-bottom-contents">
+                        <strong class="hot-section-sub-title">
+                            {{item.title}}
+                        </strong>
+                        <p class="hot-section-content">
+                            {{item.content}}
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <button class="hot-section-shop-now pointer" href="">SHOP NOW</button>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

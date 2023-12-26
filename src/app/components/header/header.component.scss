@@ -1,0 +1,255 @@
+.header-promo {
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    opacity: 1;
+    font-family: "font-1";
+    font-size: 11px;
+    letter-spacing: .1em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom: 1px solid #c8cbcc;
+    padding-right: 0;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    padding: 0 10px;
+    background-color: #ffffff;
+}
+
+.header-top {
+    display: none;
+    font-family: "font-4";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.header-top-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.logo-wrapper {
+    position: relative;
+    top: 2px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.header-bottom-contents {
+    display: none;
+    align-items: center;
+    align-self: end;
+}
+
+.category {
+    font-size: 12px;
+    padding: 0 10px;
+    font-style: normal;
+    letter-spacing: 1.87px;
+    line-height: 16px;
+}
+
+.font-500 {
+    font-family: "font-4";
+}
+
+
+.font-700 {
+    font-family: "font-1";
+}
+
+.auxiliary-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.input-wrapper {
+    display: none;
+    visibility: hidden;
+}
+
+.input {
+    transition: border ease 1s;
+    border: 1px solid #eceff1;
+    background-color: #eceff1;
+    padding: 0 35px 0 10px;
+    height: 32px;
+    max-width: 230px;
+    color: #000000;
+    font-family: "font-4";
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: 20px;
+    flex: 1;
+}
+
+.search-wrapper {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    width: 24px;
+    height: 24px;
+}
+
+.user-icon {
+    position: relative;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outline {
+    display: none;
+}
+
+// .logo {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     position: relative;
+//     top : -10px;
+// }
+
+.display-none {
+    display: flex;
+    visibility: visible;
+}
+
+.display-block {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (min-width:960px) {
+
+    .logo {
+        display: block;
+        visibility: visible;
+    }
+
+    .header-container {
+        padding: 0 20px;
+        border-bottom: 1px solid #eceff1;
+    }
+
+    .header-top {
+        display: flex;
+        flex-direction: row;
+        height: 32px;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .header-bottom {
+        padding: 0;
+        grid-template-columns: 1fr 5fr 2fr;
+    }
+
+    .logo-wrapper {
+        top: -10px;
+        width: 60px;
+        height: auto;
+        margin: 0;
+    }
+
+    .header-bottom-contents {
+        display: flex;
+        margin: 0 10px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height: 47px;
+    }
+
+    .input-wrapper {
+        display: flex;
+        visibility: visible;
+        position: relative;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+    }
+
+    .display-none {
+        display: none;
+        visibility: hidden;
+    }
+
+    .display-block {
+        display: flex;
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .category {
+        font-size: 14px;
+    }
+
+    .outline {
+        display: block;
+        color: red;
+    }
+}
+
+@media screen and (min-width : 1280px) {
+    .header-container {
+        padding: 0 40px;
+    }
+
+    .header-bottom-contents {
+        justify-content: center;
+    }
+
+    .header-bottom {
+        grid-template-columns: 2fr 5fr 2fr;
+    }
+}
+
+.scroll-watcher {
+    transition: 0.30s;
+}
+
+@keyframes scroll-watcher {
+    to {
+    }
+}

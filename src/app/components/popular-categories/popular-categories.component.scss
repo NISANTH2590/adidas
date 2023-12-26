@@ -1,0 +1,124 @@
+.wrapper {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.section-wrapper {
+    min-height: 30vh;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: block;
+}
+
+.title {
+    font-family: "font-1";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 36px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content-container {
+    margin: 24px 0 0;
+    padding: 0 2px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.content {
+    font-style: normal;
+    font-size: 36px;
+    font-family: "font-2";
+    font-weight: 700;
+    letter-spacing: 2px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 0 0 7px;
+    display: flex;
+    margin-bottom: -1.5px;
+
+    &:hover{
+        border-bottom-width: 8px;
+        border-bottom-color: #000000;
+        margin-bottom: -8px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width:390px) {
+    .section-wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .contents{
+        display: block;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .contents {
+        width: calc(100% + 2rem);
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .content-container {
+        padding: 0 4px;
+        width: 100%;
+    }
+
+    .content {
+        padding: 0 0 6px;
+    }
+
+    .contents {
+        margin: 8px 0 18px;
+        line-height: 36px;
+        display: flex;
+    }
+
+    .section-wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+}
+
+@media screen and (min-width:960px) {
+    .wrapper {
+        margin-bottom: 80px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .contents {
+        width: calc(100% + 3rem);
+        padding: 0 0 18px;
+    }
+
+    .content-container {
+        width: 33.3333333333%;
+        margin: 65px 0 0;
+    }
+
+    .content {
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: lowercase;
+        margin-right: 3rem;
+    }
+}

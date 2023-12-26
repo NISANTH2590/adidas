@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "font-1";
+    src: url("./assets/fonts/font1.woff2");
+}
+
+@font-face {
+    font-family: "font-2";
+    src: url("./assets/fonts/font2.woff2");
+}
+
+@font-face {
+    font-family: "font-3";
+    src: url("./assets/fonts/font3.woff2");
+}
+
+@font-face {
+    font-family: "font-4";
+    src: url("./assets/fonts/font4.woff2");
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+    height: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: #eceff1;
+}

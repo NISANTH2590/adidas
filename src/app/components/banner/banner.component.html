@@ -1,0 +1,56 @@
+@if(showAd){
+<div class="header-ad">
+    ADIDAS: THE BRAND WITH THE 3-STRIPES
+    <button style="border: none;padding: 0;margin: 0;" (click)="hideAd()">
+        <span class="close-button-wrapper">
+            <img class="close-button" src="../../../assets/svgs/closeButton.svg">
+        </span>
+    </button>
+</div>
+}
+
+<div class="wrapper">
+    <section class="banner-section">
+        <div class="banner-image-wrapper">
+            <picture>
+                <source
+                    srcset="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/em_in_eoss_commercial_fw23_launch_mh_d_04fb7bd6a7.jpg"
+                    media="(min-width: 960px)" width="2880" height="1280">
+                <source
+                    srcset="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_960,w_960/em_in_eoss_commercial_fw23_launch_mh_t_1561bb2338.jpg"
+                    media="(min-width: 600px)" width="1600" height="1600">
+                <source
+                    srcset="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_600,w_600/em_in_eoss_commercial_fw23_launch_mh_m_6b882d2d54.jpg"
+                    media="(max-width: 599px)" width="750" height="1100"><img
+                    src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/em_in_eoss_commercial_fw23_launch_mh_d_04fb7bd6a7.jpg"
+                    alt="" width="1600" height="1600" loading="eager" fetchpriority="high" class="banner-image">
+            </picture>
+        </div>
+        <div class="banner-content-wrapper">
+            <div class="banner-content">
+                <div class="banner-title-wrapper">
+                    <div>
+                        <h2 class="banner-title">Extra 20% Off above ₹4499 </h2>
+                    </div>
+                    <div class="banner-summary">
+                        <p>Wide Range Available</p>
+                    </div>
+                </div>
+                <div class="banner-cta">
+                    <div class="cta-men">
+                        <span>Shop Men</span>
+                        <img style="margin-left:10px;" src="../../../assets/svgs/Arrow.svg">
+                    </div>
+                    <div class="cta-men">
+                        <span>Shop Women</span>
+                        <img style="margin-left:10px;" src="../../../assets/svgs/Arrow.svg">
+                    </div>
+                    <div class="cta-men">
+                        <span>Shop KIds</span>
+                        <img style="margin-left:10px;" src="../../../assets/svgs/Arrow.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

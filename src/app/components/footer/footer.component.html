@@ -1,0 +1,32 @@
+<div class="footer-news-letter">
+    <span class="footer-menu-content">{{'Join adidas and get 15% off' | uppercase}}</span>
+    <button class="news-letter-button">
+        <span class="news-letter-span">Sign up for free
+            <svg class="news-letter-svg"></svg>
+        </span>
+    </button>
+</div>
+<div class="footer-contents-mobile">
+    @for(content of mobileFooterContents[0]; track $index){
+    <a class="footer-subCategories-mobile">{{content}}</a>
+    }
+</div>
+
+<div class="footer-wrapper">
+    @for (content of desktopFooterContents; track $index) {
+    <div class="footer-contents">
+        <h5 class="footer-names">{{content.categories}}</h5>
+        @for (subCategory of content.subCategories; track $index) {
+        @if(!subCategory){<div style="height: 15px;"></div>}
+        <a class="footer-subCategories">{{subCategory}}</a>
+        }
+    </div>
+    }
+    <div class="footer-contents">
+        <h5 class="footer-names">FOLLOW US</h5>
+        <a href="https://www.instagram.com/adidasindia/">
+            <img style="max-width: 140px;height: auto;"
+                src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enIN/Images/NEWinstagram_logo-footer_tcm209-875968.png">
+        </a>
+    </div>
+</div>

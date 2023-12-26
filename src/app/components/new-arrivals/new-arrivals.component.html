@@ -1,0 +1,36 @@
+<div class="wrapper">
+    <div class="sub-wrapper">
+        <div class="buttons-container">
+            <div class="new-arrival-button-wrapper">
+                <button class="arrival-button new-arrival-button">New arrivals</button>
+            </div>
+            <button class="arrival-button best-of-adidas-button">Best of adidas</button>
+        </div>
+        <div class="products-wrapper scrollbar">
+            <div class="products-scroll">
+                @for (item of newArrivalContents; track $index) {
+                <div class="product">
+                    <section class="product-image">
+                        <div class="image-container pointer">
+                            <img class="image" src={{item.url}}>
+                            <div class="price-wrapper">
+                                {{item.price}}
+                            </div>
+                        </div>
+                        <div class="wishwilt-wrapper">
+                            <img
+                            class="pointer"
+                                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg">
+                        </div>
+                    </section>
+                    <section class="product-content ">
+                        <p class="title pointer">{{item.title}}</p>
+                        <p class="category pointer">{{item.category}}</p>
+                        <p class="new-product pointer">New</p>
+                    </section>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
